@@ -27,16 +27,16 @@
     grid-gap: 50px; }
   .container div {
     text-align: center;
-    border-radius: 5px; }
-    .container div p {
-      font-size: 3rem; }
+    border-radius: 5px;
+    border: groove 10px rgba(51, 51, 51, 0.61);
+    border: p;
+      border-font-size: 3rem; }
     .container div.transformN {
       transform: none;
       position: relative; }
   .container .face1 {
     width: 200px;
     height: 200px;
-    background: rgba(255, 0, 0, 0.164);
     position: absolute;
     background-image: url("../../src/img/cats.jpg");
     background-size: cover;
@@ -47,7 +47,6 @@
   .container .face2 {
     width: 200px;
     height: 200px;
-    background: rgba(0, 0, 255, 0.507);
     transition: 1s;
     position: absolute;
     transform: rotateY(90deg) translateZ(100px);
@@ -59,7 +58,6 @@
   .container .face3 {
     width: 200px;
     height: 200px;
-    background: rgba(0, 128, 0, 0.527);
     transition: 1s;
     position: absolute;
     transform: rotateY(180deg) translateZ(100px);
@@ -70,7 +68,6 @@
   .container .face4 {
     width: 200px;
     height: 200px;
-    background: rgba(255, 123, 0, 0.562);
     transition: 1s;
     position: absolute;
     transform: rotateY(-90deg) translateZ(100px);
@@ -81,7 +78,6 @@
   .container .face5 {
     width: 200px;
     height: 200px;
-    background: rgba(128, 0, 128, 0.514);
     transition: 1s;
     position: absolute;
     transform: rotateX(90deg) translateZ(100px);
@@ -92,7 +88,6 @@
   .container .face6 {
     width: 200px;
     height: 200px;
-    background: rgba(0, 0, 0, 0.555);
     transition: 1s;
     position: absolute;
     transform: rotateX(-90deg) translateZ(100px);
