@@ -1,8 +1,107 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+  body .big-img,
+  html .big-img {
+    display: none; }
+    body .big-img div,
+    html .big-img div {
+      width: 600px;
+      height: 600px;
+      margin: auto; }
+    body .big-img span,
+    html .big-img span {
+      font-size: 100px;
+      top: 50px;
+      left: 50px;
+      cursor: pointer; }
+    body .big-img img,
+    html .big-img img {
+      width: 100%;
+      transition: 2s; }
+
+.main-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 128, 0, 0.479); }
+  .main-container img {
+    width: 100%; }
+  .main-container .mini-squar {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    cursor: pointer; }
+    .main-container .mini-squar.stopAnim {
+      animation: none; }
+  .main-container .mini-squar1 {
+    top: 80%;
+    left: 30%;
+    transition: 1s;
+    animation: toTop 1.8s linear infinite; }
+
+@keyframes toTop {
+  0% {
+    top: 80%;
+    transform: rotate(30deg);
+    opacity: 1; }
+  100% {
+    top: 30%;
+    transform: rotate(360deg);
+    opacity: 0.1; } }
+  .main-container .mini-squar2 {
+    top: 90%;
+    left: 15%;
+    transition: 1s;
+    animation: toTop2 3s linear infinite 1s; }
+
+@keyframes toTop2 {
+  0% {
+    top: 90%;
+    transform: rotate(30deg);
+    opacity: 1; }
+  100% {
+    top: 5%;
+    transform: rotate(360deg);
+    opacity: 0.1; } }
+  .main-container .mini-squar3 {
+    top: 30%;
+    left: 80%;
+    transition: 1s;
+    animation: toTop3 2s linear infinite 0.5s; }
+
+@keyframes toTop3 {
+  0% {
+    top: 30%;
+    transform: rotate(60deg);
+    opacity: 0.1; }
+  100% {
+    top: 0%;
+    transform: rotate(260deg);
+    opacity: 0.1; } }
+  .main-container .mini-squar4 {
+    top: 900%;
+    left: 60%;
+    transition: 1s;
+    animation: toTop3 2s linear infinite 1.4s; }
+
+@keyframes toTop3 {
+  0% {
+    top: 90%;
+    transform: rotate(60deg);
+    opacity: 1; }
+  100% {
+    top: 30%;
+    transform: rotate(-260deg);
+    opacity: 0; } }
+
 .container {
   background: transparent;
   width: 200px;
   height: 200px;
-  margin: 100px auto;
+  margin: 10% auto;
   position: relative;
   transform-style: preserve-3d;
   transition: 1s;
@@ -95,3 +194,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
+
+.big-img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(204, 204, 204, 0.493);
+  z-index: 1000; }
